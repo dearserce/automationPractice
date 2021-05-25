@@ -16,10 +16,12 @@ public class LoginPage {
 	private By inptUsername 	= By.id("user-name"); 
 	private By inptPassword 	= By.id("password");
 	private By btnSubmit 		= By.id("login-button");
-	private By errorText 		= By.xpath("//*[@id=\"login_button_container\"]/div/form/h3");
-		
+	private By errorText 		= By.xpath("html/body/div/div/div[2]/div[1]/div[1]/div/form/div[3]/h3");
+		///html/body/div/div/div[2]/div[1]/div[1]/div/form/div[3]/h3
+	////*[@id=\"login_button_container\"]/div/form/h3
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		
 	}
 	
 	//Get And Set Information
